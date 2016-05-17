@@ -1,0 +1,30 @@
+model					      
+
+linear svm + C=1 + test_size=500:	63.6
+
+rbf svm + C=1  + test_size=500 :       65.2
+
+rbf svm + C=1  + test_size=1000:       66.0
+
+rbf svm + C=1  + test_size=1061:        Accuracy: 66.25824693685203
+					Precision: 64.8960739030023
+					Recall: 57.70020533880903
+					F-score: 61.086956521739125
+
+
+
+rbf svm + C=0.8  + test_size=1061:	Accuracy: 66.44674835061262
+					Precision: 65.05747126436782
+					Recall: 58.110882956878854
+					F-score: 61.388286334056396
+
+
+rbf svm + C=0.75  + test_size=1061:	Accuracy: 66.35249764373233
+					Precision: 64.77272727272727
+					Recall: 58.52156057494866
+					F-score: 61.48867313915858
+
+
+
+
+ 

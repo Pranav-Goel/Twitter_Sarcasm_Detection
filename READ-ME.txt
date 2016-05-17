@@ -1,0 +1,60 @@
+This is an implementation of the research - "Harnessing Incongruity for Sarcasm Detection" by Joshi et al (2015). The pdf file of this paper is included.
+
+This project classifies twitter tweets as sarcastic or non sarcastic based on the features described in mentioned research.
+This project was undertaken under guidance of Dr. AK Singh, in semester 4, at IIT (BHU), Varanasi by Pranav Goel and Prayas Jain.
+
+The project report gives a detailed account of what has been done, and how, covering all the efforts, discussing the results as well as the future directions.
+The powerpoint presentation serves as a brief, presentable summary of this report.
+
+NOTE: the final implementation , or the file which when run would produce the results, is in further-final\libsvm-3.21\python ; fine name - try.py
+
+The final results - 
+
+(with all features)
+Precision - 0.7216
+Recall - 0.9345
+F-score - 0.8144
+
+Following supporting codes and data files are in supporting-files folder, and are presented here in the order of implementation:
+
+ order - 
+get_tweets.py		twitter streaming to get tweets
+json-read2.py			json file cleanup and appending , repalcing with NAME , HYPERLINK ,etc.
+the 2 json files in 	the streamed original tweets form
+dup-rem 			remove duplicate json and write to a text file
+text-dup-rem 			remove retweets
+text-append  			to append two files txt
+hashtag-rem.py 			to remove hashtags
+
+cleaned up tweets - (in )
+pranav+old+final - 2353 sarcastic tweets
+NS-final         - 1400 non-sarcastic tweets
+
+run sentistrength tool
+originally created files : 
+pranav+old+final+results
+
+we cleaned them up, to create the files we use -
+pranav+old+final+results-clean.txt
+NS+final+results-clean.txt
+
+To generate the features - feature-gen.py and try1-emojis.py
+ original csv files (without unigrams) 
+
+For unigrams - 
+create_dic.py
+vocab.txt
+FINAL-feature-gen.py 	This also creates the data in libsvm format
+
+ the libsvm formatted files - 
+ns-lib2
+sarc-libsvm
+libsvm_data 2  		3753 tweets data in proper libsvm format
+
+
+ABOVE ALL IN  FOLDER
+
+
+To  the final results on data go to D:\exp-proj\twitter2\further-final\libsvm-3.21\python
+and run try.py there
+

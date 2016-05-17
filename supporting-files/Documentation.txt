@@ -1,0 +1,8 @@
+json-read2.py - json file cleanup and append to a new json file
+dup-rem remove duplicate json and write to a text file
+text-dup-rem -remove retweets
+text-append - to append two files txt
+hashtag-rem.py to remove hashtags
+Run -senti strength
+Run explicit on file by senti-strength
+run feature-gen.py
